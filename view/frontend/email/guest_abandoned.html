@@ -1,0 +1,51 @@
+<!--@subject {{trans "Abandoned Cart"}} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<table>
+    <tr>
+        <td><h3>{{var customer_name}},</h3></td>
+    </tr>
+    <tr>
+        <td>
+            <h1>{{trans 'Your favorite items are still waiting for you:'}}</h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="font-size: 14px;">You left items in your shopping cart, so we have saved the contents. Complete your order now and enjoy <b>20% off!</b></p>
+            <p style="font-size: 14px;">Hurry, this offer expires in 48 hours.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td style="border-radius: 2px;" bgcolor="#ED2939">
+                        <a  class="link" href="{{var quoteurl}}" target="_blank" style="padding: 8px 8px; border: 1px solid #ED2939;border-radius: 2px;font-size: 14px; color: #ffffff;text-decoration: none;font-weight:bold;display: inline-block;">SHOP NOW</a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr class="email-summary">
+        <td>
+            {{layout handle="email_product_list" items=$items area="frontend"}}
+        </td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+    </tr>
+    <tr class="email-information">
+        <td>
+            <p>{{trans "If you need help we're here to answer your questions! "}} <a href="{{store url=''}}/contact">Contact Us</a></p>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <risecommerce_abandoned_cart>
+            <customers>
+                <enabled_1>0</enabled_1>
+                <send_after_1>1440</send_after_1>
+                <template1>risecommerce_abandoned_cart_customers_template1</template1>
+                <enabled_2>0</enabled_2>
+                <send_after_2>48</send_after_2>
+                <template2>risecommerce_abandoned_cart_customers_template2</template2>
+                <enabled_3>0</enabled_3>
+                <send_after_3>72</send_after_3>
+                <template3>risecommerce_abandoned_cart_customers_template3</template3>
+                <enabled_4>0</enabled_4>
+                <send_after_4>96</send_after_4>
+                <template4>risecommerce_abandoned_cart_customers_template4</template4>
+            </customers>
+            <guests>
+                <enabled_1>0</enabled_1>
+                <send_after_1>1440</send_after_1>
+                <template1>risecommerce_abandoned_cart_guests_template1</template1>
+                <enabled_2>0</enabled_2>
+                <send_after_2>48</send_after_2>
+                <template2>risecommerce_abandoned_cart_guests_template2</template2>
+                <enabled_3>0</enabled_3>
+                <send_after_3>72</send_after_3>
+                <template3>risecommerce_abandoned_cart_guests_template3</template3>
+                <enabled_4>0</enabled_4>
+                <send_after_4>96</send_after_4>
+                <template4>risecommerce_abandoned_cart_guests_template4</template4>
+            </guests>
+        </risecommerce_abandoned_cart>
+    </default>
+</config>

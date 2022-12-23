@@ -1,0 +1,50 @@
+{
+    "risecommerce_abandoned_cart": {
+        "column": {
+            "id": true,
+            "quote_id": true,
+            "store_id": true,
+            "customer_id": true,
+            "email": true,
+            "quote_updated_at": true,
+            "abandoned_cart_number": true,
+            "items_count": true,
+            "items_ids": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "RISECOMMERCE_ABANDONED_CART_QUOTE_ID": true,
+            "RISECOMMERCE_ABANDONED_CART_STORE_ID": true,
+            "RISECOMMERCE_ABANDONED_CART_CUSTOMER_ID": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "risecommerce_abandoned_cart_email_campaign": {
+        "column": {
+            "id": true,
+            "email": true,
+            "customer_id": true,
+            "quote_id": true,
+            "message": true,
+            "store_id": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_STORE_ID": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_EMAIL": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_CREATED_AT": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_UPDATED_AT": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_QUOTE_ID": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_CUSTOMER_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "RISECOMMERCE_ABANDONED_CART_EMAIL_CAMPAIGN_STORE_ID_STORE_STORE_ID": true
+        }
+    }
+}

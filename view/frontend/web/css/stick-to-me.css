@@ -1,0 +1,133 @@
+.risecommerce_abandoned_cart_stick_block_layer {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.risecommerce_abandoned_cart_email_popup {
+    height: 200px;
+    width: 80%;
+    box-shadow: 0px 0px 7px #4a4a4a;
+    -moz-box-shadow: 0px 0px 7px #4a4a4a;
+    -webkit-box-shadow: 0px 0px 7px #4a4a4a;
+    background: #f2f2f2;
+    -webkit-animation: zoomin 0.7s;
+    animation: zoomin 0.7s;
+}
+
+.risecommerce_abandoned_cart_email_popup > .stick_content {
+    padding: 20px;
+}
+
+.risecommerce_abandoned_cart_email_popup > .stick_close {
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    float: right;
+    font-family: Arial;
+    font-size: 17px;
+    background-color: #d1d1d1;
+    color: #4c4c4c;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+/*
+CSS3 animation keyframes.
+*/
+@-webkit-keyframes zoomin {
+
+    0% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        transform: scale(1.04);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-ms-keyframes zoomin {
+
+    0% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        transform: scale(1.04);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+@keyframes zoomin {
+
+    0% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        transform: scale(1.04);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.stick_container .risecommerce_abandoned_cart_email_popup .stick_content{ margin: 0 auto;}
+.stick_container .risecommerce_abandoned_cart_email_popup .stick_content h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+.stick_container .risecommerce_abandoned_cart_email_popup .stick_content .control .message{ margin-top: 5px; color: red;}
+.stick_container .risecommerce_abandoned_cart_email_popup .stick_content .actions{ margin-top: 10px;}
+.stick_container .risecommerce_abandoned_cart_email_popup{ width: 30%; height: intrinsic; height: -webkit-max-content; height: -moz-max-content;}
+
+@media (max-width: 1024px) {
+    .stick_container .risecommerce_abandoned_cart_email_popup{ width: 60%;}
+}
+@media (max-width: 425px) {
+    .stick_container .risecommerce_abandoned_cart_email_popup{ width: 98%;}
+}

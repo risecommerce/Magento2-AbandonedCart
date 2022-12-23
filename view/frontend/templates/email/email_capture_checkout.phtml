@@ -1,0 +1,15 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Risecommerce\AbandonedCart\Helper\Data $helper */
+?>
+<?php $helper = $this->helper(\Risecommerce\AbandonedCart\Helper\Data::class); ?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Risecommerce_AbandonedCart/js/emailCapture":{
+            "type":"checkout",
+            "url":"<?= $block->escapeHtml($helper->getEmailCaptureUrl()); ?>"
+        }
+    }
+}
+</script>

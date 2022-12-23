@@ -1,0 +1,41 @@
+{
+    "name": "risecommerce/magento-2-abandoned-cart-email-extension",
+    "description": "Risecommerce Abandoned Cart Email Extension for Magento 2",
+    "type": "magento2-module",
+	"version": "1.0.1",
+    "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+    "authors": [
+    {
+      "name": "Risecommerce",
+      "email": "support@risecommerce.com",
+      "homepage": "https://www.risecommerce.com",
+      "role": "Technical Support"
+    }
+  ],
+    "minimum-stability": "dev", 
+  "keywords": [
+    "magento 2",
+    "magento cart",
+    "magento abondoned cart",
+    "risecommerce",
+    "abondoned cart ajax",
+    "abondoned cart auto",
+    "abondoned cart email",
+    "abondoned cart settings"
+  ],
+    "require": {
+        "php": "~7.0.13|~7.1.0|~7.2.0|~7.3.0|~7.4.0|^8.1"
+
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Risecommerce\\DeleteOrders\\": ""
+        }
+    }
+}

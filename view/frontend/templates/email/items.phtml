@@ -1,0 +1,38 @@
+<?php $items = $block->getItems() ?>
+<table class="email-items">
+    <thead>
+        <tr>
+            <th class="item-info" style="text-align: left;">
+                <?= /* @escapeNotVerified */  __('Items'); ?>
+            </th>
+            <th class="item-sku" style="text-align: left;">
+                <?= /* @escapeNotVerified */  __('Sku'); ?>
+            </th>
+            <th class="item-qty" style="text-align: left;">
+                <?= /* @escapeNotVerified */  __('Qty'); ?>
+            </th>
+            <th class="item-price" style="text-align: left;">
+                <?= /* @escapeNotVerified */  __('Price'); ?>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    <?php
+    if ($items):
+        foreach ($items as $item): ?>
+            <?php
+            if ($item->getParentItem()) {
+                continue;
+            }
+            ?>
+            <tr>
+            <td><?= $item->getName() ?></td>
+            <td><?= $item->getSku() ?></td>
+            <td><?= $item->getQty() ?></td>
+            <td><?= $item->getPrice() ?></td>
+        </tr>
+        <?php endforeach;
+    endif;
+    ?>
+    </tbody>
+</table>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+	<template id="risecommerce_abandoned_cart_customers_template1" label="Abandoned Cart 1" file="abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_customers_template2" label="Abandoned Cart 2" file="abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_customers_template3" label="Abandoned Cart 3" file="abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_customers_template4" label="Abandoned Cart 4" file="abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_guests_template1" label="Guest Abandoned Cart 1" file="guest_abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_guests_template2" label="Guest Abandoned Cart 2" file="guest_abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_guests_template3" label="Guest Abandoned Cart 3" file="guest_abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+	<template id="risecommerce_abandoned_cart_guests_template4" label="Guest Abandoned Cart 4" file="guest_abandoned.html" type="html" module="Risecommerce_AbandonedCart" area="frontend"/>
+</config>

@@ -1,0 +1,34 @@
+<div id="risecommerce_abandoned_cart_stick_layer" style="display:none;" class="stick_popup risecommerce_abandoned_cart_email_popup">
+    <div class="stick_close" onclick="jQuery.stick_close();">X</div>
+    <div class="stick_content">
+        <h2>Subscribe For More Offers</h2>
+        <div class="control">
+            <input type="email" name="email" autocomplete="email" id="exit-email" title="<?= method_exists($block, 'escapeHtmlAttr') ? $block->escapeHtmlAttr(__('Email Address')) : $block->escapeHtml(__('Email Address')); ?>" class="input-text exit-email" placeholder="<?= $block->escapeHtml(__('Email Address')) ?>" class="input-text exit-email" placeholder="<?= $block->escapeHtml(__('Email Address')) ?>" value="" data-validate="{required:true, 'validate-email':true}">
+            <div class="message" style="display: none;"></div>
+        </div>
+        <div class="actions">
+            <button class="save action primary">Subscribe</button>
+        </div>
+    </div>
+</div>
+<?php if (!$block->isCartEmpty() && $block->isGuestUser() && $block->isQuoteEmailEmpty()): ?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Risecommerce_AbandonedCart/js/stickToMeModel": {}
+    }
+}
+</script>
+<?php endif; ?>
+
+<?php $helper = $this->helper(\Risecommerce\AbandonedCart\Helper\Data::class); ?>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Risecommerce_AbandonedCart/js/emailCapture":{
+            "type":"exit",
+            "url":"<?= $block->escapeHtml($helper->getEmailCaptureUrl()); ?>"
+        }
+    }
+}
+</script>
