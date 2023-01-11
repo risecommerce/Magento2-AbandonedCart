@@ -14,7 +14,9 @@ Method A)
 4. Drop/move the unzipped files to directory '[Magento_Root]/app/code/Risecommerce/AbandonedCart'
 
 Method B)
+
 Using Composer
+
 composer require risecommerce/magento-2-abandoned-cart-email-extension:1.0.1
       
 #Enable Extension:
