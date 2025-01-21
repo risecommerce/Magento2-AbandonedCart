@@ -1,10 +1,14 @@
 ## <a href="https://risecommerce.com/https-risecommerce-com-magento2-abandoned-cart-email-html.html">Risecommerce Abandoned Cart Email Extension </a>
-This extension is the perfect tool to convert visitors or guests into real customers. Send email reminders to bring customers back to the store to complete orders by giving lucrative offers.
+This [Risecommerce All Product Reviews page](https://risecommerce.com/store/magento2-all-product-reviews-as-testomonials.html) extension is the perfect tool to convert visitors or guests into real customers. Send email reminders to bring customers back to the store to complete orders by giving lucrative offers.
 
-##Support: 
+For more details about this extension, visit the [Risecommerce All Product Reviews page](https://risecommerce.com/store/magento2-all-product-reviews-as-testomonials.html).
+
+If you're looking to enhance your Magento store further, consider hiring a [dedicated Magento developer](https://risecommerce.com/hire-dedicated-magento-developer.html).
+
+For support or inquiries, please visit our [contact page](https://risecommerce.com/contact).
+
+## Support: 
 version - 2.3.*, 2.4.*
-
-## Do you wnat further customization ? => <a href="https://risecommerce.com/hire-dedicated-magento-developer.html"> Hire our Dedicated Magento developer </a>
 
 ##How to install Extension 
 
