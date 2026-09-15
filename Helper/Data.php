@@ -11,6 +11,7 @@
  * @license  https://www.risecommerce.com  Open Software License (OSL 3.0)
  * @link     https://www.risecommerce.com
  */
+
 namespace Risecommerce\AbandonedCart\Helper;
 
 
@@ -45,10 +46,17 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      */
     public $directoryList;
 
-     /**
+    /**
      * @var \Psr\Log\LoggerInterface
      */
     protected $logger;
+
+    /**
+     * Connector Logger
+     *
+     * @var \Zend_Log
+     */
+    protected $connectorLogger;
 
     /**
      * Data constructor.
@@ -58,7 +66,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      * @param \Magento\Customer\Model\CustomerFactory         $customerFactory customerFactory
      * @param \Magento\Framework\App\Config\Storage\Writer    $writer          writer
      * @param \Magento\Framework\App\Filesystem\DirectoryList $directoryList   directoryList
-                     */
+     */
     public function __construct(
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
@@ -78,7 +86,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         if (! is_dir($logDir)) {
             mkdir($directoryList->getPath('var')  . DIRECTORY_SEPARATOR . 'log');
         }
-       /* $writer = new \Zend\Log\Writer\Stream($logDir . DIRECTORY_SEPARATOR .  'cron.log');
+        /* $writer = new \Zend\Log\Writer\Stream($logDir . DIRECTORY_SEPARATOR .  'cron.log');
         $logger = new \Zend\Log\Logger();
         $logger->addWriter($writer);*/
         // $writer = new \Laminas\Log\Writer\Stream($logDir . DIRECTORY_SEPARATOR .  'cron.log');
